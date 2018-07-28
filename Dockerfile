@@ -19,7 +19,7 @@ ADD . .
 RUN cd assets/ && \
     npm run deploy && \
     cd - && \
-    mix do compile, phx.digest
+    mix do compile, phx.digest 2>&1
 
 USER default
 
