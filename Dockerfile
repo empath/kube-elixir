@@ -21,6 +21,6 @@ RUN cd assets/ && \
     cd - && \
     mix do compile, phx.digest 2>&1
 
-USER default
+USER root
 
 CMD ["mix", "phx.server"]

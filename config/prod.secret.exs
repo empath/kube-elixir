@@ -17,4 +17,5 @@ config :hello, Hello.Repo,
   username: System.get_env("DB_USER"),
   password: System.get_env("DB_PASSWORD"),
   database: "hello_prod",
+  hostname: "postgres"
   pool_size: 15
