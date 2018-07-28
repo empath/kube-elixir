@@ -14,7 +14,7 @@ config :hello, HelloWeb.Endpoint,
 # Configure your database
 config :hello, Hello.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: System.get_env("DB_USER")
-  password: System.get_env("DB_PASSWORD")
+  username: System.get_env("DB_USER"),
+  password: System.get_env("DB_PASSWORD"),
   database: "hello_prod",
   pool_size: 15
